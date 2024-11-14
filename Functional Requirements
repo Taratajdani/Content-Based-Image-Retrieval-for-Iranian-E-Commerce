@@ -1,22 +1,20 @@
 
 #### Functional Requirements (FRs)
 
-A *functional requirement* defines specific behaviors of the system. Here are some of the functional requirements for your project:
-
-1. *Image Uploading*
+1. Image Uploading
    - Users must be able to upload an image from their device or take a picture directly using their camera.
    
-2. *Image Processing*
+2. Image Processing
    - The system must preprocess the image (e.g., resizing, normalization) before performing a search.
 
-3. *Product Search by Image*
+3. Product Search by Image
    - The system must match the user-uploaded image with product images in the database and return relevant results.
 
-4. *Product Information*
+4. Product Information
    - Upon finding a match, the system must display product information such as name, price, and description.
 
-5. *Similarity Scoring*
+5. Similarity Scoring
    - The system should rank products based on similarity scores that measure how closely the uploaded image matches product images.
 
-6. *Integration with E-commerce Platforms*
+6. Integration with E-commerce Platforms
    - The system should be able to integrate as a plugin with existing e-commerce platforms.
