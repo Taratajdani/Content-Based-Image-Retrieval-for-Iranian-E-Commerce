@@ -1,0 +1,16 @@
+Non-functional Requirements (NFRs)
+
+1. *Performance*
+   - Image search should take no longer than 2 seconds to return results.
+
+2. *Scalability*
+   - The system should be able to handle large datasets, supporting at least 1 million product images.
+
+3. *Accuracy*
+   - The image matching algorithm should achieve an accuracy of at least 85% on test datasets.
+
+4. *Security*
+   - User-uploaded images must be stored securely and deleted after a session ends.
+
+5. *Usability*
+   - The system should be simple and intuitive for users to upload images and view results.
