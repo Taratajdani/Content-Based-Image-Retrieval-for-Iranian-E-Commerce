@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+    <h1>Upload an Image or Capture from Camera</h1>
+    
+
+    <form action="/upload-image/" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Upload Image</button>
+    </form>
+
+
+    <h2>Or Capture from Camera</h2>
+    <video id="video" width="320" height="240" autoplay></video>
+    <button id="captureBtn">Capture</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const captureBtn = document.getElementById('captureBtn');
+
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch(err => console.error('Error accessing camera: ', err));
+
+        captureBtn.onclick = function() {
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0);
+            const imageData = canvas.toDataURL('image/jpeg');
+
+        }
+    </script>
+</body>
+</html>
