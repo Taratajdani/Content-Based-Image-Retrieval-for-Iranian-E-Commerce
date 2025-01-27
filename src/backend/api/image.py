@@ -1,6 +1,6 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
-from backend.model.object_detector import ObjectDetector
-from backend.model.image_embedder import ImageEmbedder
+from backend.models.object_detector import ObjectDetector
+from backend.models.image_embedder import ImageEmbedder
 from backend.utils import calculate_similarity, create_db, generate_text_vector
 import io
 from PIL import Image
