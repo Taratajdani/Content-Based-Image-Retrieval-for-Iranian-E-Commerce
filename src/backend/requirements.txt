@@ -1,0 +1,15 @@
+Flask
+Flask-CORS
+Pillow
+scikit-learn
+sentence-transformers
+torch
+torchvision
+sqlite-utils
+numpy
+pytest
+requests
+fastapi
+uvicorn
+torch-summary
+transformers
