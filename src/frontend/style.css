@@ -1,0 +1,25 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+.options button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#imagePreview img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+#results img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+    cursor: pointer;
+}
+#loading {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
