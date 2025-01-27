@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digikala Image Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digikala Image Search</h1>
+        <div class="options">
+            <button id="uploadBtn">Upload Image</button>
+            <button id="captureBtn">Capture Image</button>
+        </div>
+        <input type="file" id="imageUpload" accept="image/*" style="display:none;">
+        <video id="cameraPreview" style="display:none;"></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <div id="imagePreview" style="display:none;">
+        </div>
+        <div id="loading" style="display: none;">Loading...</div>
+        <p id="message"></p>
+        <div id="results" style="display:none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
